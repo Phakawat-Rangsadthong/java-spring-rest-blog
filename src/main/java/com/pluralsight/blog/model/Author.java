@@ -23,10 +23,9 @@ public class Author {
     @JsonIgnore
     private String password;
     @OneToMany
-    List<Post> posts;
+    List<Post> posts = new ArrayList<>();
     public Author() {
         super();
-        posts = new ArrayList<>();
     }
 
 
